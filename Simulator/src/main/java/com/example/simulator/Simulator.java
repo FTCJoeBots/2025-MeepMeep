@@ -1,6 +1,7 @@
 package com.example.simulator;
 
 import com.acmerobotics.roadrunner.geometry.Pose2d;
+import com.acmerobotics.roadrunner.geometry.Vector2d;
 
 import org.rowlandhall.meepmeep.MeepMeep;
 import org.rowlandhall.meepmeep.roadrunner.DefaultBotBuilder;
@@ -21,14 +22,16 @@ public class Simulator {
       // Set bot constraints: maxVel, maxAccel, maxAngVel, maxAngAccel, track width
       .setConstraints(60, 60, Math.toRadians(180), Math.toRadians(180), 15)
       .followTrajectorySequence(drive -> drive.trajectorySequenceBuilder(
-          new Pose2d(38, -32, -Math.PI/2))
-        .forward(10)
+          new Pose2d(62, -22, Math.toRadians(180)))
         .waitSeconds( wait )
-        .turn(Math.toRadians( -90 ) )
-        .forward(30)
-        .turn(Math.toRadians( 90 ) )
-        .forward(-20)
+        .splineTo(new Vector2d(-52,-35),Math.toRadians(240))
         .waitSeconds( wait )
+              .lineToLinearHeading(new Pose2d(-12,-18,Math.toRadians(270)))
+              .waitSeconds( wait )
+              .lineTo(new Vector2d(-12,-50))
+              .waitSeconds( wait )
+              .lineToLinearHeading(new Pose2d(-52,-35,Math.toRadians(240)))
+              .waitSeconds(wait)
         .build());
 
     return path;

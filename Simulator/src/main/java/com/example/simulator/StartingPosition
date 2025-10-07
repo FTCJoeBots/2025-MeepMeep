@@ -1,0 +1,13 @@
+Rule G304
+
+Robot has to start:
+    Over a launch line
+    Touching a goal or perimiter
+    Fully on it's own half of the field
+    Not attached to anything
+    In it's starting configuration (can't grow on init)
+    Has a legal number of pre-loaded artifacts
+
+
+Roadrunner trajectory functions:
+https://learnroadrunner.com/trajectorybuilder-functions.html
