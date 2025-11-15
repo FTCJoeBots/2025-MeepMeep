@@ -43,12 +43,14 @@ Blue Far.
 
 
 
-                            new Pose2d(-55, -44, Math.toRadians(230)))
+                            new Pose2d(-55, 44, Math.toRadians(130)))
                         //Shooter on
                         .waitSeconds( wait )
-                        .back(40)
+                        .strafeTo(new Vector2d(-29.29, 13.36))
                         .waitSeconds((3))
+                        .lineToLinearHeading(new Pose2d(-30,53,Math.toRadians(90)))
                         //Shoot here
+                        /*
                         .lineToLinearHeading(new Pose2d(-11,-25,Math.toRadians(270)))
                         .waitSeconds(.5)
                         //Turn intake on
@@ -62,6 +64,7 @@ Blue Far.
                         .lineToLinearHeading(new Pose2d(-33,-14,Math.toRadians(230)))
                         .waitSeconds(3)
                         //Shoot again
+
                         .lineToLinearHeading(new Pose2d(12,-25,Math.toRadians(270)))
                         //Intake on
                         .forward(7)
@@ -73,7 +76,7 @@ Blue Far.
                         .lineToLinearHeading(new Pose2d(-33,-14,Math.toRadians(230)))
                         .waitSeconds(3)
                         //Shoot
-                        .strafeLeft(25)
+                        .strafeLeft(25)*/
                         .waitSeconds(2)
                         .build());
 
