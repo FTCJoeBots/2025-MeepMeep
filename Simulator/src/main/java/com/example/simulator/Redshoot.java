@@ -1,6 +1,7 @@
 package com.example.simulator;
 
 import com.acmerobotics.roadrunner.geometry.Pose2d;
+import com.acmerobotics.roadrunner.geometry.Vector2d;
 
 import org.rowlandhall.meepmeep.MeepMeep;
 import org.rowlandhall.meepmeep.roadrunner.DefaultBotBuilder;
@@ -48,6 +49,11 @@ Blue Far.
                         .lineToLinearHeading(new Pose2d(-29.29, 13.36,Math.toRadians(130)))
                         .waitSeconds((3))
                         .lineToLinearHeading(new Pose2d(-11,22,Math.toRadians(90)))
+
+
+                        // .turn(Math.toRadians(-40))
+                       // .splineToConstantHeading(new Vector2d(-11,27),Math.toRadians(90))
+
                         .waitSeconds((3))
                         //Start intake
                         .lineToLinearHeading(new Pose2d(-11,38,Math.toRadians(90)))
