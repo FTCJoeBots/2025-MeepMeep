@@ -43,12 +43,12 @@ Blue Far.
 
 
 
-                            new Pose2d(-55, 44, Math.toRadians(130)))
+                            new Pose2d(-47, -49, Math.toRadians(225)))
                         //Shooter on
                         .waitSeconds( wait )
-                        .strafeTo(new Vector2d(-29.29, 13.36))
+                        .strafeTo(new Vector2d(-39, -18))
                         .waitSeconds((3))
-                        .lineToLinearHeading(new Pose2d(-30,53,Math.toRadians(90)))
+                        .lineToLinearHeading(new Pose2d(-13,-22,Math.toRadians(270)))
                         //Shoot here
                         /*
                         .lineToLinearHeading(new Pose2d(-11,-25,Math.toRadians(270)))
