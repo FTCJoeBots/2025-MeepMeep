@@ -26,7 +26,7 @@ public class BlueFarShoot3 {
 
 
 
-                            new Pose2d(62, -20, Math.toRadians(180)))
+                        new Pose2d(52, -20, Math.toRadians(180)))
                         //Shooter on
                         .waitSeconds( wait )
                         .lineToLinearHeading(new Pose2d(49,-13.36,Math.toRadians(210)))

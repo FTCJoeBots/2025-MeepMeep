@@ -43,40 +43,24 @@ Blue Far.
 
 
 
-                            new Pose2d(-47, -49, Math.toRadians(225)))
+                        new Pose2d(-55.5, -39, Math.toRadians(270)))
                         //Shooter on
-                        .waitSeconds( wait )
-                        .strafeTo(new Vector2d(-39, -18))
+                        .waitSeconds( 2 )
+                        .lineToLinearHeading(new Pose2d(-29.29, -13.36,Math.toRadians(230)))
                         .waitSeconds((3))
-                        .lineToLinearHeading(new Pose2d(-13,-22,Math.toRadians(270)))
-                        //Shoot here
-                        /*
-                        .lineToLinearHeading(new Pose2d(-11,-25,Math.toRadians(270)))
-                        .waitSeconds(.5)
-                        //Turn intake on
-                        .forward(7)
-                        .waitSeconds(.1)
-                        .forward(7)
-                        .waitSeconds(.1)
-                        .forward(9)
-                        .waitSeconds(1)
-                        //Intake off
-                        .lineToLinearHeading(new Pose2d(-33,-14,Math.toRadians(230)))
-                        .waitSeconds(3)
+                        .lineToLinearHeading(new Pose2d(-11,-22,Math.toRadians(270)))
+                        .waitSeconds((3))
+                        //Start intake
+                        .lineToLinearHeading(new Pose2d(-11,-38,Math.toRadians(270)))
+                        .waitSeconds((.3))
+                        .lineToLinearHeading(new Pose2d(-11,-46,Math.toRadians(270)))
+                        .waitSeconds((.5))
+                        //Stop Intake
+                        //Go back to shooting position
+                        .lineToLinearHeading(new Pose2d(-29.29, -13.36,Math.toRadians(230)))
+
                         //Shoot again
 
-                        .lineToLinearHeading(new Pose2d(12,-25,Math.toRadians(270)))
-                        //Intake on
-                        .forward(7)
-                        .waitSeconds(.1)
-                        .forward(7)
-                        .waitSeconds(.1)
-                        .forward(9)
-                        .waitSeconds(1)
-                        .lineToLinearHeading(new Pose2d(-33,-14,Math.toRadians(230)))
-                        .waitSeconds(3)
-                        //Shoot
-                        .strafeLeft(25)*/
                         .waitSeconds(2)
                         .build());
 
